@@ -125,7 +125,7 @@ Partial Class Sha256Form
         Me.label_Version.Name = "label_Version"
         Me.label_Version.Size = New System.Drawing.Size(29, 13)
         Me.label_Version.TabIndex = 9
-        Me.label_Version.Text = "V1.0"
+        Me.label_Version.Text = "V1.1"
         '
         'Sha256Form
         '
