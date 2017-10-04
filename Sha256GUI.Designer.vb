@@ -25,7 +25,6 @@ Partial Class Sha256Form
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Sha256Form))
         Me.button_Browse = New System.Windows.Forms.Button()
-        Me.button_ComputeHash = New System.Windows.Forms.Button()
         Me.txtbox_FileSelect = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtbox_ComputedHash = New System.Windows.Forms.TextBox()
@@ -45,15 +44,6 @@ Partial Class Sha256Form
         Me.button_Browse.TabIndex = 0
         Me.button_Browse.Text = "Browse"
         Me.button_Browse.UseVisualStyleBackColor = True
-        '
-        'button_ComputeHash
-        '
-        Me.button_ComputeHash.Location = New System.Drawing.Point(93, 51)
-        Me.button_ComputeHash.Name = "button_ComputeHash"
-        Me.button_ComputeHash.Size = New System.Drawing.Size(104, 23)
-        Me.button_ComputeHash.TabIndex = 1
-        Me.button_ComputeHash.Text = "Compute Hash"
-        Me.button_ComputeHash.UseVisualStyleBackColor = True
         '
         'txtbox_FileSelect
         '
@@ -142,7 +132,6 @@ Partial Class Sha256Form
         Me.Controls.Add(Me.txtbox_ComputedHash)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtbox_FileSelect)
-        Me.Controls.Add(Me.button_ComputeHash)
         Me.Controls.Add(Me.button_Browse)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Sha256Form"
@@ -152,7 +141,6 @@ Partial Class Sha256Form
 
     End Sub
     Friend WithEvents button_Browse As System.Windows.Forms.Button
-    Friend WithEvents button_ComputeHash As System.Windows.Forms.Button
     Friend WithEvents txtbox_FileSelect As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtbox_ComputedHash As System.Windows.Forms.TextBox
