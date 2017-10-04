@@ -14,6 +14,7 @@ Public Class Sha256Form
         For Each theFile As String In theFiles
             txtbox_FileSelect.Text = theFile
         Next
+        ComputeHash()
     End Sub
     Private Sub button_Browse_Click(sender As Object, e As EventArgs) Handles button_Browse.Click
 
