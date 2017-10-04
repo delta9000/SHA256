@@ -134,6 +134,7 @@ Partial Class Sha256Form
         Me.Controls.Add(Me.txtbox_FileSelect)
         Me.Controls.Add(Me.button_Browse)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "Sha256Form"
         Me.Text = "SHA256 File Integrity Checker"
         Me.ResumeLayout(False)
