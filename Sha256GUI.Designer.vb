@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class Sha256Form
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,44 +23,44 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Sha256Form))
+        Me.button_Browse = New System.Windows.Forms.Button()
+        Me.button_ComputeHash = New System.Windows.Forms.Button()
+        Me.txtbox_FileSelect = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtbox_ComputedHash = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txtbox_CompareHash = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.label_Version = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'Button1
+        'button_Browse
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 51)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Browse"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.button_Browse.Location = New System.Drawing.Point(12, 51)
+        Me.button_Browse.Name = "button_Browse"
+        Me.button_Browse.Size = New System.Drawing.Size(75, 23)
+        Me.button_Browse.TabIndex = 0
+        Me.button_Browse.Text = "Browse"
+        Me.button_Browse.UseVisualStyleBackColor = True
         '
-        'Button2
+        'button_ComputeHash
         '
-        Me.Button2.Location = New System.Drawing.Point(93, 51)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(104, 23)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Compute Hash"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.button_ComputeHash.Location = New System.Drawing.Point(93, 51)
+        Me.button_ComputeHash.Name = "button_ComputeHash"
+        Me.button_ComputeHash.Size = New System.Drawing.Size(104, 23)
+        Me.button_ComputeHash.TabIndex = 1
+        Me.button_ComputeHash.Text = "Compute Hash"
+        Me.button_ComputeHash.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'txtbox_FileSelect
         '
-        Me.TextBox1.Location = New System.Drawing.Point(9, 25)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(553, 20)
-        Me.TextBox1.TabIndex = 2
+        Me.txtbox_FileSelect.Location = New System.Drawing.Point(9, 25)
+        Me.txtbox_FileSelect.Name = "txtbox_FileSelect"
+        Me.txtbox_FileSelect.Size = New System.Drawing.Size(553, 20)
+        Me.txtbox_FileSelect.TabIndex = 2
         '
         'Label1
         '
@@ -71,13 +71,13 @@ Partial Class Form1
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Selected File:"
         '
-        'TextBox2
+        'txtbox_ComputedHash
         '
-        Me.TextBox2.Location = New System.Drawing.Point(9, 103)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.ReadOnly = True
-        Me.TextBox2.Size = New System.Drawing.Size(553, 20)
-        Me.TextBox2.TabIndex = 4
+        Me.txtbox_ComputedHash.Location = New System.Drawing.Point(9, 103)
+        Me.txtbox_ComputedHash.Name = "txtbox_ComputedHash"
+        Me.txtbox_ComputedHash.ReadOnly = True
+        Me.txtbox_ComputedHash.Size = New System.Drawing.Size(553, 20)
+        Me.txtbox_ComputedHash.TabIndex = 4
         '
         'Label2
         '
@@ -88,12 +88,12 @@ Partial Class Form1
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Computed SHA256 Hash:"
         '
-        'TextBox3
+        'txtbox_CompareHash
         '
-        Me.TextBox3.Location = New System.Drawing.Point(9, 145)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(553, 20)
-        Me.TextBox3.TabIndex = 6
+        Me.txtbox_CompareHash.Location = New System.Drawing.Point(9, 145)
+        Me.txtbox_CompareHash.Name = "txtbox_CompareHash"
+        Me.txtbox_CompareHash.Size = New System.Drawing.Size(553, 20)
+        Me.txtbox_CompareHash.TabIndex = 6
         '
         'Label3
         '
@@ -118,49 +118,49 @@ Partial Class Form1
         Me.Timer1.Enabled = True
         Me.Timer1.Interval = 1000
         '
-        'Label5
+        'label_Version
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(531, 172)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(29, 13)
-        Me.Label5.TabIndex = 9
-        Me.Label5.Text = "V1.0"
+        Me.label_Version.AutoSize = True
+        Me.label_Version.Location = New System.Drawing.Point(531, 172)
+        Me.label_Version.Name = "label_Version"
+        Me.label_Version.Size = New System.Drawing.Size(29, 13)
+        Me.label_Version.TabIndex = 9
+        Me.label_Version.Text = "V1.0"
         '
-        'Form1
+        'Sha256Form
         '
         Me.AllowDrop = True
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(577, 195)
-        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.label_Version)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.txtbox_CompareHash)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.txtbox_ComputedHash)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.txtbox_FileSelect)
+        Me.Controls.Add(Me.button_ComputeHash)
+        Me.Controls.Add(Me.button_Browse)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "Form1"
+        Me.Name = "Sha256Form"
         Me.Text = "SHA256 File Integrity Checker"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents button_Browse As System.Windows.Forms.Button
+    Friend WithEvents button_ComputeHash As System.Windows.Forms.Button
+    Friend WithEvents txtbox_FileSelect As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents txtbox_ComputedHash As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents txtbox_CompareHash As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
-    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents label_Version As System.Windows.Forms.Label
 
 End Class
